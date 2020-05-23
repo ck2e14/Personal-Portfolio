@@ -6,20 +6,24 @@
    overflow: hidden;
 }
 
-.logo {
-   height: 55vh;
+.logo-main {
+   height: 20vw;
    margin: auto;
    transform: scale(1);
-   transition: transform 0.5s
+   transition: transform 0.5s;
+   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   animation-duration: 3s;
+
 }
 
 .logo:hover {
-   transform: scale(1.02   );
+   transform: scale(1.02);
 }
 
 .splash-blurb {
    position: absolute;
-   top: 32vh;
+   top: 31vh;
    left: 2vw;
    font-size: 4vw;
    color: white;
@@ -28,44 +32,44 @@
 }
 
 .splash-blurb span {
-   color: #15f4ee;
+   color: #f0f0f0;
    -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
    -webkit-animation-delay: .4s;
    -webkit-animation-duration: 1s;
    animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
    animation-delay: .4s;
-   animation-duration: 1s;
+   animation-duration: 1.25s;
 }
 
 .splash-blurb .divider-line {
    margin-top: 1.5vh;
-   height: 2px;
+   height: 0.35vh;
    width: 31.5vw;
-   background-color: rgb(177, 177, 177);
+   background-color: #179ec7;
    box-sizing: border-box;
    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    -webkit-animation-delay: .2s;
    animation-duration: 3s;
-   animation-delay: .5s;
+   animation-delay: .75s;
 }
 
 .splash-blurb .divider-line-2{
-   margin-top: 0.3vh;
-   height: 2px;
+   margin-top: 0.5vh;
+   height: 0.35vh;
    width: 31.5vw;
-   background-color: rgb(177, 177, 177);
+   background-color: #179ec7;
    box-sizing: border-box;
    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    -webkit-animation-delay: .2s;
    animation-duration: 3s;
-   animation-delay: .5s;
+   animation-delay: .75s;
 }
 
 .splash-blurb .blurb-statement {
    width: 33vw;
-   margin-top: 30px;
+   margin-top: 2.5vh;
    font-size: 1.2vw;
    color: #ffffff;
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;

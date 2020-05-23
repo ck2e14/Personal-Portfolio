@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './Splash.css';
+import logo from '../../Assets/logo2.jpg'
 
 class Splash extends Component {
    render() {
       return (
          <div>
             <div className="background">
-               <img src="https://i.imgur.com/8UCOcn8.png" alt="logo-icon" className="logo"/>
+               <img src={logo} alt="logo-main" className="logo-main"/>
             </div>
             <div className="splash-blurb">
                <span>Full-Stack<br></br> Web Developer</span>
