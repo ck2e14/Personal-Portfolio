@@ -1,13 +1,13 @@
 .background {
    width: 100vw;
    height: 100vh;
-   background-color: black;
+   background-color: rgba(0, 0, 0);
    display: flex;
    overflow: hidden;
 }
 
 .logo-main {
-   height: 20vw;
+   height: 23vw;
    margin: auto;
    transform: scale(1);
    transition: transform 0.5s;
