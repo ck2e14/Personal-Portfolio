@@ -15,15 +15,15 @@
 .logo-icon-navbar {
    width: 4vw;
    position: absolute;
-   top: 1px;
+   top: 0px;
    left: 1vw;
    z-index: 102;
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-   -webkit-animation-delay: .2s;
+   -webkit-animation-delay: 1.5s;
    -webkit-animation-duration: 1s;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation-duration: 1s;
-   animation-delay: .4s;
+   animation-delay: 1.5s;
 }
 
 .nav-divider-line {
@@ -37,9 +37,9 @@
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation-duration: 1s;
-   animation-delay: 2s;
+   animation-delay: 1.7s;
    -webkit-animation-duration: 1s;
-   -webkit-animation-delay: 2s;  
+   -webkit-animation-delay: 1.7s;  
 }
 
 .navbar-items {
@@ -50,7 +50,7 @@
 
 .nav-link {
    font-size: .7vw;;
-   color: #00eeff;
+   color: #ffffff;
    text-decoration: none !important;
    letter-spacing: .25vw;
    transition: all .5s;
@@ -62,7 +62,7 @@
 
 .nav-link:hover, a:visited, a:link, a:active, :focus {
    text-decoration: none !important;
-   color: #ffffff;
+   color: #00eeff;
    cursor: pointer;
    transform: scale(1.1);
 }

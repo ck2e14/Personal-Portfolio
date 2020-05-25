@@ -1,23 +1,23 @@
 .background {
    width: 100vw;
    height: 100vh;
-   background-color: rgb(58, 58, 58);
+   background-color: rgb(0, 0, 0);
    display: flex;
    overflow: hidden;
 }
 
 .logo-main {
-   height: 14vw;
+   height: 16vw;
    /* margin: auto; */
-   margin-left: 43vw;
+   margin-left: 41.9vw;
    margin-top: 36vh;
    transition: transform 0.5s;
-   -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-   -webkit-animation-delay: .2s;
+   -webkit-animation: puff-in-center-logo 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   -webkit-animation-delay: .4s;
    -webkit-animation-duration: 1s;
-   animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   animation: puff-in-center-logo 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation-duration: 1s;
-   animation-delay: .25s;
+   animation-delay: .4s;
 }
 
 .splash-blurb {
@@ -40,35 +40,36 @@
 }
 
 .splash-blurb .divider-line {
-   margin-top: 1.5vh;
-   height: 0.35vh;
-   width: 31.5vw;
-   background-color:#ffffffd0;
-   box-sizing: border-box;
-   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   -webkit-animation-delay: 1.3s;
-   -webkit-animation-duration: 3s;
-   animation-duration: 3s;
-   animation-delay: 1.3s;
+        position: relative;
+        margin-top: 1.5vh;
+        height: 0.35vh;
+        width: 31.5vw;
+        background-color:#ffffffd0;
+        box-sizing: border-box;
+        -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation-delay: 1.3s;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        animation-delay: 1.3s;
 }
 
 .splash-blurb .divider-line-2{
-   margin-top: 0.5vh;
-   height: 0.35vh;
-   width: 31.5vw;
-   background-color:#00d9ffd0;
-   box-sizing: border-box;
-   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   -webkit-animation-delay: 1.4s;
-   -webkit-animation-duration: 3s;
-   animation-duration: 3s;
-   animation-delay: 1.4s;
+        margin-top: 1%;
+        height: 0.35vh;
+        width: 31.5vw;
+        background-color:#00d9ffd0;
+        box-sizing: border-box;
+        -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation-delay: 1.4s;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        animation-delay: 1.4s;
 }
 
 .splash-blurb .divider-line-3{
-        margin-top: 0.7vh;
+        margin-top: 1%;
         height: 0.35vh;
         width: 31.5vw;
         background-color:#ffffffd0;
@@ -83,14 +84,14 @@
      
 .splash-blurb .blurb-statement {
    width: 33vw;
-   margin-top: 2.5vh;
+   margin-top: .75vh;
    font-size: 1.2vw;
-   color: #bdbdbd;
+   color: #ffffff;
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-   -webkit-animation-delay: 1.6s;
+   -webkit-animation-delay: 1.5s;
    -webkit-animation-duration: 1s;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-   animation-delay: 1.6s;
+   animation-delay: 1.5s;
    animation-duration: 1s;
    font-family: 'Montserrat', sans-serif;
    font-weight: bold;
@@ -98,7 +99,8 @@
 }
 
 /* --------------------KEYFRAMES------------------- */
- /**
+
+/**
  * ----------------------------------------
  * animation puff-in-center
  * ----------------------------------------
@@ -135,7 +137,44 @@
      opacity: 1;
    }
  }
+/* -------------------------------------- */
+
  
+/**
+ * ----------------------------------------
+ * animation puff-in-center-logo
+ * ----------------------------------------
+ */
+ @-webkit-keyframes puff-in-center-logo {
+        0% {
+          -webkit-transform: scale(1.15);
+                  transform: scale(1.15);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+}
+@keyframes puff-in-center-logo {
+        0% {
+          -webkit-transform: scale(1.15);
+                  transform: scale(1.15);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+}
+/* -------------------------------------- */
+      
 
 /**
  * ----------------------------------------
@@ -182,6 +221,7 @@
      opacity: 1;
    }
  }
+/* -------------------------------------- */
 
 /**
  * ----------------------------------------
@@ -212,6 +252,8 @@
      opacity: 1;
    }
  }
+/* -------------------------------------- */
+
 
 /*
  * ----------------------------------------
@@ -233,5 +275,9 @@
    100% {
      opacity: 1;
    }
+/* -------------------------------------- */
  }
+/* -------------------------------------- */
+
+
 /* --------------------KEYFRAMES------------------- */
