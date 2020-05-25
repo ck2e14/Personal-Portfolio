@@ -1,8 +1,9 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from "react-router-dom";
-// import logo4 from '../../Assets/logo4.png';
-import logo5 from '../../Assets/logo5.png';
+import logoIcon3 from '../../Assets/logoIcon3.png';
+// import logoIcon5 from '../../Assets/logoIcon5.png';
+
 
 const Navbar = () => {
    return (
@@ -30,7 +31,7 @@ const Navbar = () => {
             </div>
          <nav className="nav-divider-line"></nav>
          <a href='/'>
-            <img src={logo5} alt="logo-icon-navbar" className="logo-icon-navbar"/>
+            <img src={logoIcon3} alt="logo-icon-navbar" className="logo-icon-navbar"/>
          </a>
       </div>
    );

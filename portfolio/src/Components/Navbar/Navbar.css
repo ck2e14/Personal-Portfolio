@@ -3,21 +3,23 @@
    margin-left: 31vw;
    top: 2.25vh;
    position: fixed;
+   z-index: 101;
+
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation-duration: 1s;
    animation-delay: 1.5s;
    -webkit-animation-duration: 1s;
    -webkit-animation-delay: 1.5s;
-   z-index: 101;
 }
 
 .logo-icon-navbar {
    width: 4vw;
    position: absolute;
    top: 0px;
-   left: 1vw;
+   left: 95vw;
    z-index: 102;
+
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    -webkit-animation-delay: 1.5s;
    -webkit-animation-duration: 1s;
@@ -34,12 +36,13 @@
    height: 0.25vh;
    background-color:#ffffffd0;
    z-index: 9999;
+   
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-   animation-duration: 1s;
-   animation-delay: 1.7s;
-   -webkit-animation-duration: 1s;
-   -webkit-animation-delay: 1.7s;  
+   animation-duration: .75s;
+   animation-delay: 1.6s;
+   -webkit-animation-duration: .75s;
+   -webkit-animation-delay: 1.6s;  
 }
 
 .navbar-items {
@@ -62,9 +65,9 @@
 
 .nav-link:hover, a:visited, a:link, a:active, :focus {
    text-decoration: none !important;
-   color: #00eeff;
+   color: #ffa600;
    cursor: pointer;
-   transform: scale(1.1);
+   transform: scale(1.15);
 }
 
 /* --------------------KEYFRAMES------------------- */
