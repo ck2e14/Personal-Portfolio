@@ -8,7 +8,6 @@ class Splash extends Component {
    render() {
       return (
          <div>
-            <Navbar/>
             <div className="background">
                <img src={logo2} alt="logo-main" className="logo-main"/>
             </div>
