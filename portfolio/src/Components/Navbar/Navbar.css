@@ -1,27 +1,45 @@
 .navbar {
    width: 40vw;
-   margin-left: 33vw;
+   margin-left: 31vw;
    top: 2.25vh;
    position: fixed;
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation-duration: 1s;
-   animation-delay: .5s;
+   animation-delay: 1.5s;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-delay: 1.5s;
    z-index: 101;
+}
+
+.logo-icon-navbar {
+   width: 4vw;
+   position: absolute;
+   top: 1px;
+   left: 1vw;
+   z-index: 102;
+   -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   -webkit-animation-delay: .2s;
+   -webkit-animation-duration: 1s;
+   animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   animation-duration: 1s;
+   animation-delay: .4s;
 }
 
 .nav-divider-line {
    position: fixed;
-   width: 40.5vw;
+   width: 40.25vw;
    top: 5vh;
-   margin-left: 32.65vw;
+   margin-left: 30.75vw;
    height: 0.25vh;
-   background-color: rgb(255, 255, 255);
+   background-color:#ffffffd0;
    z-index: 9999;
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation-duration: 1s;
-   animation-delay: .5s;   
+   animation-delay: 2s;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-delay: 2s;  
 }
 
 .navbar-items {
@@ -31,9 +49,8 @@
 }
 
 .nav-link {
-   font-size: .75vw;;
-   color: rgb(0, 225, 255);
-   color: white;
+   font-size: .7vw;;
+   color: #00eeff;
    text-decoration: none !important;
    letter-spacing: .25vw;
    transition: all .5s;
@@ -45,11 +62,10 @@
 
 .nav-link:hover, a:visited, a:link, a:active, :focus {
    text-decoration: none !important;
-   color: rgb(0, 225, 255);
+   color: #ffffff;
    cursor: pointer;
    transform: scale(1.1);
 }
-
 
 /* --------------------KEYFRAMES------------------- */
  /**

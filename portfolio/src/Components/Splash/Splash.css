@@ -1,24 +1,23 @@
 .background {
    width: 100vw;
    height: 100vh;
-   background-color: rgb(0, 0, 0);
+   background-color: rgb(58, 58, 58);
    display: flex;
    overflow: hidden;
 }
 
 .logo-main {
-   height: 18.5vw;
-   margin: auto;
-   transform: scale(1);
+   height: 14vw;
+   /* margin: auto; */
+   margin-left: 43vw;
+   margin-top: 36vh;
    transition: transform 0.5s;
-   -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   animation-duration: 7s;
-   animation-delay: .1s;
-}
-
-.logo:hover {
-   transform: scale(1.02);
+   -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   -webkit-animation-delay: .2s;
+   -webkit-animation-duration: 1s;
+   animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   animation-duration: 1s;
+   animation-delay: .25s;
 }
 
 .splash-blurb {
@@ -33,10 +32,10 @@
 .splash-blurb span {
    color: #f0f0f0;
    -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-   -webkit-animation-delay: .4s;
+   -webkit-animation-delay: 1s;
    -webkit-animation-duration: 1s;
    animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-   animation-delay: .4s;
+   animation-delay: 1s;
    animation-duration: 1.25s;
 }
 
@@ -44,44 +43,59 @@
    margin-top: 1.5vh;
    height: 0.35vh;
    width: 31.5vw;
-   background-color:rgb(0, 225, 255);
+   background-color:#ffffffd0;
    box-sizing: border-box;
    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   -webkit-animation-delay: .6s;
+   -webkit-animation-delay: 1.3s;
+   -webkit-animation-duration: 3s;
    animation-duration: 3s;
-   animation-delay: .6s;
+   animation-delay: 1.3s;
 }
 
 .splash-blurb .divider-line-2{
    margin-top: 0.5vh;
    height: 0.35vh;
    width: 31.5vw;
-   background-color:rgb(0, 225, 255);
+   background-color:#00d9ffd0;
    box-sizing: border-box;
    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
    animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-   -webkit-animation-delay: .6s;
+   -webkit-animation-delay: 1.4s;
+   -webkit-animation-duration: 3s;
    animation-duration: 3s;
-   animation-delay: .6s;
+   animation-delay: 1.4s;
 }
 
-
+.splash-blurb .divider-line-3{
+        margin-top: 0.7vh;
+        height: 0.35vh;
+        width: 31.5vw;
+        background-color:#ffffffd0;
+        box-sizing: border-box;
+        -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation-delay: 1.5s;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        animation-delay: 1.5s;
+}
+     
 .splash-blurb .blurb-statement {
    width: 33vw;
    margin-top: 2.5vh;
    font-size: 1.2vw;
    color: #bdbdbd;
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-   -webkit-animation-delay: .2s;
+   -webkit-animation-delay: 1.6s;
+   -webkit-animation-duration: 1s;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-   animation-delay: .25s;
-   animation-duration: 1.75s;
+   animation-delay: 1.6s;
+   animation-duration: 1s;
    font-family: 'Montserrat', sans-serif;
    font-weight: bold;
 
 }
-
 
 /* --------------------KEYFRAMES------------------- */
  /**
@@ -195,6 +209,28 @@
    100% {
      -webkit-transform: translateZ(0);
              transform: translateZ(0);
+     opacity: 1;
+   }
+ }
+
+/*
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ @keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
      opacity: 1;
    }
  }
