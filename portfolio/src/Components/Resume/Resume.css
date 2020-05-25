@@ -1,0 +1,77 @@
+.resume-background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: #002131;
+   z-index: -10;
+}
+
+.resume-container-flex {
+   display: flex;
+   position: fixed;
+   top: 23vh;
+   height: 200px;
+   z-index: -1;
+   width: 100%;
+   
+}
+
+.pre-amble {
+   margin-left: 50px;
+   font-size: 3vw;
+   color: rgb(255, 255, 255);
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   flex: 1;
+   border-style: solid;
+}
+
+.pre-amble2 {
+   margin-left: 50px;
+   font-size: 3vw;
+   color: rgb(255, 255, 255);
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   flex: 2;
+   border-style: solid;
+
+}
+
+.pre-amble3 {
+   margin-left: 50px;
+   margin-right: 50px;
+
+   font-size: 3vw;
+   color: rgb(255, 255, 255);
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   border-style: solid;
+   flex: 2
+}
+
+
+/* --------------------KEYFRAMES------------------- */
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ @keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+/* --------------------KEYFRAMES------------------- */

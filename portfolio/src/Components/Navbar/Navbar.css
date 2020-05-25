@@ -1,40 +1,71 @@
 .navbar {
-   width: 50vw;
-   margin-left: 25vw;
-   top: 3vh;
+   width: 40vw;
+   margin-left: 31vw;
+   top: 2.25vh;
    position: fixed;
    -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
    animation-duration: 1s;
    animation-delay: 1.5s;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-delay: 1.5s;
+   z-index: 101;
+}
+
+.logo-icon-navbar {
+   width: 4vw;
+   position: absolute;
+   top: 0px;
+   left: 1vw;
+   z-index: 102;
+   -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   -webkit-animation-delay: 1.5s;
+   -webkit-animation-duration: 1s;
+   animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   animation-duration: 1s;
+   animation-delay: 1.5s;
+}
+
+.nav-divider-line {
+   position: fixed;
+   width: 40.25vw;
+   top: 5vh;
+   margin-left: 30.75vw;
+   height: 0.25vh;
+   background-color:#ffffffd0;
+   z-index: 9999;
+   -webkit-animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   animation: puff-in-center 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+   animation-duration: 1s;
+   animation-delay: 1.7s;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-delay: 1.7s;  
 }
 
 .navbar-items {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   font-family: 'Montserrat', sans-serif;
 }
 
 .nav-link {
-   font-size: .75vw;
-   /* font-weight: bold; */
-   color: rgb(0, 225, 255);
-   color: white;
+   font-size: .7vw;;
+   color: #ffffff;
    text-decoration: none !important;
    letter-spacing: .25vw;
    transition: all .5s;
+   /* border-style: solid;
+   border-radius: 10px;
+   border-width: 2px;
+   padding: 15px; */
 }
 
 .nav-link:hover, a:visited, a:link, a:active, :focus {
    text-decoration: none !important;
-   color: rgb(0, 225, 255);
-   font-weight: bold;
+   color: #00eeff;
    cursor: pointer;
    transform: scale(1.1);
 }
-
-
 
 /* --------------------KEYFRAMES------------------- */
  /**
