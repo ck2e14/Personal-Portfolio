@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Splash.css';
 import logo2 from '../../Assets/logo2.jpg';
 // import logo1 from '../../Assets/logo1.png';
-import Navbar from '../Navbar/Navbar';
 
 class Splash extends Component {
    render() {
