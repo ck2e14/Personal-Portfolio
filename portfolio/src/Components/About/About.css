@@ -1,0 +1,86 @@
+.about-background {
+   position: fixed;
+   background-color: rgb(0, 92, 121);
+   height: 100vh; 
+   width: 100vw;
+   overflow: hidden;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+}
+
+.about-tagline {
+   position: relative;
+   width: 5vw;
+   top: 30vh;
+   left: 2vw;   
+   color: white;
+   font-size: 4vw;
+   font-family: 'Libre Baskerville', serif;  
+   font-weight: lighter;
+
+}
+
+.about-contents {
+   position: fixed;
+   /* background-color: rgb(255, 255, 255); */
+   top: 10vh;
+   left: 20vw;
+   height: 85vh;
+   width: 75vw;
+   /* border-style: solid;
+   border-radius: 10px;
+   border-color: rgb(255, 255, 255);  */
+}
+
+/* .background-photo {
+   width: 100vw;
+   z-index: 1003;
+   opacity: .6;
+} */
+
+/* .about-shape-bg-1 {
+   position: relative;
+   left: 5vw;
+   top: 12vh;
+   z-index: 101;
+   height: 30vh;
+   width: 40vw;
+   background-color: rgba(0, 0, 0, 0);
+   transition: all .5s ease-in-out;
+   color: white;
+   padding: 10px;
+}
+
+.shape-1-text {
+   position: relative;
+   top: 10%; 
+   font-size: 1.5vw;
+}
+
+.shape-2-text {
+   position: relative;
+   top: 20%;
+   font-size: 1.5vw;
+}
+
+.about-shape-bg-1:hover {
+   transform: scale(1.02)   
+}
+
+.about-shape-bg-2 {
+   position: fixed;
+   left: 48vw;
+   top: 32vh;
+   height: 45vh;
+   width: 40vw;
+   background-color: rgb(56, 154, 167);
+   border-style: solid;
+   transition: all .5s ease-in-out;
+   color: white;
+   padding: 10px;
+} 
+
+.about-shape-bg-2:hover {
+   transform: scale(1.02)   
+}
+  */
