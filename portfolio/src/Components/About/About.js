@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-// import { Link } from 'react-router-dom';
 import MacDesk from '../../Assets/mac-desk.jpg';
 import Watercolor from '../../Assets/watercolor.jpg';
 import TopDown from '../../Assets/topDown.jpg';

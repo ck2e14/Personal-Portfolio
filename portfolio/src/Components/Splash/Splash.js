@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Splash.css';
-// import logoIcon3 from '../../Assets/logoIcon3.png';
 import logo5 from '../../Assets/logo5.png';
 
 class Splash extends Component {
@@ -16,12 +15,12 @@ class Splash extends Component {
 
                <span>Full-Stack<br></br> Web Developer</span>
 
-                  <div className="divider-line"></div>
-                  <div className="divider-line-2"></div>
-                  <div className="divider-line-3"></div>            
-                  <div className="blurb-statement">
-                     Passionate about designing and creating powerful, attractive web apps to solve real-life problems
-                  </div>   
+               <div className="divider-line"></div>
+               <div className="divider-line-2"></div>
+               <div className="divider-line-3"></div>            
+               <div className="blurb-statement">
+                  Passionate about designing and creating powerful, attractive web apps to solve real-life problems
+               </div>   
 
             </div>
          </div>
