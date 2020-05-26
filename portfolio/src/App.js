@@ -14,22 +14,23 @@ function App() {
       <div className="App">
       
         <Navbar/>
-          
-          <div className="pages">
-          
-            <Route exact path='/'>
-              <Splash/>
-            </Route>
-            
-            <Route exact path='/about'>
-              <About/>
-            </Route>
 
-            <Route path='/resume'>
-                <Resume/> 
-            </Route>
+        <div className="pages">
         
+          <Route exact path='/'>
+            <Splash/>
+          </Route>
+          
+          <Route exact path='/about'>
+            <About/>
+          </Route>
+
+          <Route path='/resume'>
+              <Resume/> 
+          </Route>
+      
         </div>
+        
       </div>
     
     </BrowserRouter>
