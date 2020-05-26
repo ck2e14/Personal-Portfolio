@@ -8,6 +8,8 @@ import logoIcon3 from '../../Assets/logoIcon3.png';
 const Navbar = () => {
    return (
       <div>
+        <div className="hide-bar"></div>
+
             <div className="navbar">
                <div className="navbar-items">
                   

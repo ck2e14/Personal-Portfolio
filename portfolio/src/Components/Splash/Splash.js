@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './Splash.css';
-import logoIcon3 from '../../Assets/logoIcon3.png';
+// import logoIcon3 from '../../Assets/logoIcon3.png';
 import logo5 from '../../Assets/logo5.png';
-
-
 
 class Splash extends Component {
    render() {
